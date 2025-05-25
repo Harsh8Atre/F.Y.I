@@ -1,0 +1,734 @@
+/* Improved and cleaned CSS while keeping the original theme */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+    background: linear-gradient(to bottom right, #1f4037, #99f2c8);
+}
+
+img{
+    max-width: 100%;
+}
+header {
+    background-color: rgba(106, 150, 106, 0.5);
+    padding: 1em 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo h3 {
+    margin: 0;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #333;
+    color: #16816f;
+    font-weight: bold;
+}
+
+h1, h2, h3 {
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #16816f;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #126d5d;
+}
+
+.homecontent {
+    position: relative;
+    height: 550px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+div#block-wrapper {
+    max-width: 400px;
+}
+
+#bghome {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#bghome {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+img.bannerlogo {
+    position: absolute;
+    left: 0;
+    opacity: 0.8;
+    top: 0;
+    z-index: 3; 
+}
+
+img.bannerlogo1{
+    position: absolute;
+    opacity: 0.8;
+    z-index: 3;     
+}
+.homecontent .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 10;
+    pointer-events: none;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    gap: 2rem;  
+}
+.overlay-banner{
+    position:absolute;
+    z-index: 2;
+    background: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+}
+.homecontent .content h1 {
+    font-size: 3rem;
+    color: #ffffff;
+    text-shadow: 0 0 20px #118b81;
+    /* margin-top: 180px; */
+}
+
+.main {
+        padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgba(20, 104, 97, 0.3);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+img.blockimg {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 9px;
+}
+
+img.blockimg-portrait{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 9px;
+    object-position: bottom;
+}
+
+#para {
+        padding: 10px 15px;
+    color: #000000;
+    border-radius: 9px;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+#block1, #block3{
+        text-align: center;
+    background-color: rgba(107, 156, 107, 0.3);
+    max-width: 400px;
+    border-radius: 9px
+}
+#block2, #block4 {
+    text-align: center;
+    margin-left: auto;
+    max-width: 400px;
+    margin-right: 0;
+    background-color: rgba(29, 59, 29, 0.3);
+    border-radius: 9px;
+}
+
+.content .subtag {
+  font-size: 6rem;
+  font-weight: bold;
+  /* margin-top: 120px; */
+  color: #ffffff;
+  text-shadow: 0 0 20px #118b81;
+  letter-spacing: 5rem;
+}
+
+.content .subtitle {
+  font-size: 1.5rem;
+  background: linear-gradient(#d1a64a, #413213);
+  -webkit-text-fill-color: transparent;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  letter-spacing: 2rem;
+  word-spacing: 20px;
+  /* margin-top: -20px; */
+  font-weight: bold;
+}
+
+#aboutus {
+    max-width: 1000px;
+    margin: 80px auto;
+    padding: 40px;
+    background-color: rgba(20, 104, 97, 0.3);
+    border-radius: 15px;
+    backdrop-filter: blur(200px);
+    box-shadow: 0 0 25px rgba(8, 107, 94, 0.7);
+    text-align: center;
+}
+
+.about-heading {
+    font-size: 40px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 25px;
+    text-shadow: 0 0 8px rgba(16, 79, 82, 0.5);
+}
+
+#aboutus .aboutcontent {
+    font-size: 18px;
+    color: #dddddd;
+    line-height: 1.6;
+    padding: 25px;
+    border-radius: 10px;
+    background-color: rgba(20, 104, 97, 0.3);
+    box-shadow: inset 0 0 12px rgba(4, 66, 53, 0.2);
+}
+
+#footer {
+    display: flex;
+    justify-content: space-around   ;
+    padding: 40px 20px;
+    background-color: rgba(20, 54, 51, 0.3);
+    color: white;
+    border-radius: 9px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #dfdfdf;
+    align-items: center;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: #ffffff;
+    margin: 6px 0;
+    font-size: 15px;
+}
+
+.footer-section a:hover {
+    color: #126d5d; 
+}
+
+ /* team css */
+#teaminfo {
+    background: linear-gradient(to bottom right, #1f4037, #99f2c8);
+    min-height: 100vh;
+    padding-top: 100px;
+}
+
+#team-heading {
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-shadow: 0 0 10px #16816f;
+    margin-bottom: 40px;
+}
+
+.team-list {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(22, 129, 111, 0.4);
+}
+
+.team-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 15px 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    color: #ffffff;
+    transition: transform 0.2s ease;
+}
+
+.team-row:hover {
+    transform: scale(1.02);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.team-row strong {
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-shadow: 0 0 5px #118b81;
+}
+
+.team-row a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 6px;
+    background-color: #16816f;
+    transition: background-color 0.3s;
+}
+
+.team-row a:hover {
+    background-color: #126d5d;
+}
+
+#teaminfo .container header{
+    margin-top: -100px;
+}
+
+footer a.active{
+    color: #41cfb5;
+}
+
+/* --- LinkedIn Page Styling--- */
+
+#linkedininfo{
+    background: linear-gradient(to bottom right, #1f4037, #99f2c8);
+    min-height: 100vh;
+    padding-top: 100px;
+}
+
+#linkedininfo .container header{
+    margin-top: -100px;
+}
+
+#linkedin-heading {
+    font-size: 40px;
+    color: #ffffff;
+    text-shadow: 0 0 10px #16816f;
+    margin-bottom: 40px;
+}
+
+.linkedin-table-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: rgba(29, 59, 29, 0.3);
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(8, 107, 94, 0.4);
+    backdrop-filter: blur(6px);
+}
+
+.linkedin-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.1rem;
+    color: #ffffff;
+}
+
+.linkedin-table thead th {
+    padding: 12px;
+    text-align: left;
+    background-color: rgba(22, 129, 111, 0.5);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px 8px 0 0;
+}
+
+.linkedin-table tbody tr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.linkedin-table tbody td {
+    padding: 15px;
+    vertical-align: middle;
+}
+
+.linkedin-table tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.linkedin-table a {
+    background-color: #16816f;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.linkedin-table a:hover {
+    background-color: #126d5d;
+}
+
+.team-table-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: rgba(29, 59, 29, 0.3);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(22, 129, 111, 0.4);
+    backdrop-filter: blur(5px);
+}
+
+.team-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.1rem;
+    color: #ffffff;
+}
+
+.team-table thead th {
+    padding: 12px;
+    background-color: rgba(22, 129, 111, 0.5);
+    text-align: left;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px 8px 0 0;
+}
+
+.team-table tbody tr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.team-table tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.team-table td {
+    padding: 15px;
+    vertical-align: middle;
+}
+
+.team-table a {
+    background-color: #16816f;
+    font-size: 18px;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.team-table a:hover {
+    background-color: #126d5d;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.pricing-card {
+    background-color: rgba(255, 255, 255, 0.07);
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(22, 129, 111, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #ffffff;
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 25px rgba(18, 109, 93, 0.4);
+}
+
+.pricing-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.pricing-card h3 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-shadow: 0 0 5px #16816f;
+}
+
+.pricing-card .price {
+    font-size: 1.2rem;
+    color: #99f2c8;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+    color: #dcdcdc;
+    font-size: 0.95rem;
+}
+
+.pricing-card ul li {
+    margin-bottom: 10px;
+}
+
+.pricing-card .btn {
+    margin-top: 15px;
+    padding: 10px 25px;
+    background-color: #16816f;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+.pricing-card .btn:hover {
+    background-color: #126d5d;
+}
+
+.pricing-card:active {
+    border: 2px solid #99f2c8;
+    box-shadow: 0 0 20px rgba(153, 242, 200, 0.3);
+}
+
+/* Login css */
+
+.auth-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 20, 20, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  backdrop-filter: blur(4px);
+}
+
+.auth-popup.hidden {
+  display: none;
+}
+
+.auth-box {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 40px 30px;
+  border-radius: 20px;
+  width: 300px;
+  box-shadow: 0 0 30px rgba(8, 107, 94, 0.6);
+  backdrop-filter: blur(12px);
+  color: #fff;
+  position: relative;
+}
+
+.auth-box h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  text-shadow: 0 0 10px #16816f;
+}
+
+.auth-box input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+
+.auth-box input::placeholder {
+  color: #ddd;
+}
+
+.auth-box .btn {
+  width: 100%;
+  margin-top: 10px;
+  background-color: #16816f;
+  border-radius: 10px;
+}
+
+.auth-box .btn:hover {
+  background-color: #126d5d;
+}
+
+#toggle-text {
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 15px;
+}
+
+#toggle-text a {
+  color: #ffffff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  font-size: 1.2rem;
+  background: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+@media(max-width: 768px){
+    .homecontent .content h1 {
+        font-size: 30px;
+        line-height: 130%;  
+    } 
+    .content .subtag {
+        font-size: 50px;
+        letter-spacing: 2rem;
+    }  
+    .content .subtitle {
+        font-size: 20px;
+        background: linear-gradient(#d1a64a, #8b6c2e);
+        letter-spacing: 1rem;
+        word-spacing: 10px;
+        max-width: 300px;
+        margin: 0 auto;
+        -webkit-background-clip: text;
+    }
+    .homecontent .content {
+        gap: 1rem;
+    }   
+    nav ul li a {
+        padding: 4px 10px 6px;
+        font-size: 13px;
+    }
+    nav ul {
+        gap: 5px;
+    }
+    .homecontent {
+        height: 430px;
+    }
+    img.bannerlogo, img.bannerlogo1 {
+    max-width: 80px;    
+    }
+}
+
+@media(max-width: 550px){
+    .footer-section a {
+    font-size: 14px;
+    }
+    .footer-section h3{
+        font-size: 16px;
+    }
+    #linkedin-heading, #team-heading {
+    font-size: 25px;
+    }
+    h1{
+        font-size: 25px;
+        margin-left: 30px;
+    }
+    .team-table td{
+        font-size: 15px;
+    }
+    .team-table a{
+        font-size: 10px;
+    }
+    .linkedin-table a{
+        font-size: 12px;
+    }
+    .linkedin-table tbody td{
+        font-size: 15px;
+    }
+    img.bannerlogo1{
+        position: absolute;
+    }
+    .main {
+        padding: 60px 15px;
+    }
+    #aboutus {
+        padding: 40px 0px;
+    }
+    .pricing-grid {
+        padding: 0 15px;
+    }   
+    .team-table-wrapper {
+    margin: 0 10px;
+    }
+    .aboutcontent {
+        margin: 0 15px;
+    }   
+    #footer{
+        margin: 20px 15px 0 15px;
+    }
+}

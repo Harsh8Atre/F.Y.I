@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga Website - Pricing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="pricebody">
+
+    <div class="container">
+    <header>
+        <nav>
+            <div class="logo"><h3>F.Y.I.</h3></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index pricing.html" class="active">Pricing</a></li>
+                <li><a href="#" onclick="togglePopup()">Login</a></li>
+                <li><a href="#" onclick="togglePopup()">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <img src="homelogo.png" class="bannerlogo1" alt="Logo">
+    <div class="container">
+        <h1>Our Pricing Options</h1>
+        
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <h3>Visit Us</h3>
+                <p class="price">₹ 99</p>
+                <ul>
+                    <li>Attend any single class</li>
+                    <li>Perfect for trying out</li>
+                </ul>
+                <a href="#" class="btn">Book Now</a>
+            </div>
+
+            <div class="pricing-card">
+                <h3>5 Class Pack</h3>
+                <p class="price">₹ 999</p>
+                <ul>
+                    <li>Valid for 1 month</li>
+                    <li>Save on individual classes</li>
+                </ul>
+                <a href="#" class="btn">Purchase Pack</a>
+            </div>
+
+            <div class="pricing-card">
+                <h3>Monthly Membership</h3>
+                <p class="price">₹ 2999 / month</p>
+                <ul>
+                    <li>Unlimited classes</li>
+                    <li>Access to exclusive content</li>
+                </ul>
+                <a href="#" class="btn" onclick="togglePopup()">Sign Up</a>
+            </div>
+
+            <div class="pricing-card">
+                <h3>Private Session</h3>
+                <p class="price">₹ 499 / session</p>
+                <ul>
+                    <li>Personalized guidance</li>
+                    <li>Tailored to your needs</li>
+                </ul>
+                <a href="#" class="btn">Book Session</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer id="footer">
+            <div class="footer-section">
+                <h3>Project</h3>
+                <a href="index team.html">Team</a>
+            </div>
+            <div class="footer-section">
+                <a href="#"><h3>GitHub</h3></a>
+                <a href="https://github.com/Harsh8Atre/F.Y.I" target="_blank">GitHub</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <a href="index linkedin.html">LinkedIn</a>
+            </div>            
+        </footer>
+        <div id="auth-popup" class="auth-popup hidden">
+    <div class="auth-box">
+      <button class="close-btn" onclick="togglePopup()">✖</button>
+      <h2 id="auth-title">Login</h2>
+      <form id="auth-form">
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <button type="submit" class="btn">Continue</button>
+        <p id="toggle-text">Don't have an account? <a href="#" onclick="switchMode()">Sign up</a></p>
+      </form>
+    </div>
+  </div>
+
+    <script src="script.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>

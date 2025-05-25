@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F.Y.I. - For Yoga Info</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                    <h3>F.Y.I.</h3>
+            </div>
+            <ul>
+                <li><a href="index1.html" class="active">Home</a></li>
+                <li><a href="index pricing.html">Pricing</a></li>
+                <li><a href="#" onclick="togglePopup()">Login</a></li>
+                <li><a href="#" onclick="togglePopup()">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="homecontent" style="background-image: url(bg.jpg);">
+        <div class="overlay-banner"></div>
+        <img src="homelogo.png" class="bannerlogo" alt="Logo">
+        <div class="content">
+            <h1>Welcome to Your Yoga Journey</h1>
+            <h2 class="subtag">F.Y.I</h2>
+            <p class="subtitle">FOR YOGA INFO</p>
+        </div>
+    </div>
+    <div class="main">
+        <div id="block-wrapper">
+            <img src="trainer.jpg" class="blockimg" alt="Training image">
+            <div id="block1">
+                <p id="para">Our Personalized Training tailors yoga practices to your unique goals and fitness level.
+                    Get one-on-one guidance and customized routines designed just for you. Progress safely with expert
+                    support that adapts as you grow. Experience a yoga journey made personal, effective, and empowering.
+                </p>
+            </div>
+        </div>
+        <div id="block-wrapper">
+            <img src="therapy.jpg" class="blockimg-portrait" alt="Therapy  image">
+            <div id="block2">
+                <p id="para">Rejuvenate your body and mind with our personalized therapy and massage sessions. Each
+                    session is designed to release tension, improve circulation, and promote deep relaxation. Our
+                    experienced therapists use holistic techniques tailored to your needs. Feel refreshed, rebalanced,
+                    and restored after every visit.</p>
+            </div>
+        </div>
+        <div id="block-wrapper">
+            <img src="socialize.jpg" class="blockimg" alt="Socializing image">
+            <div id="block4">
+                <p id="para">Build meaningful connections with like-minded individuals on the same path. Our community
+                    fosters support, laughter, and shared growth. Join group sessions, events, and workshops to expand
+                    your circle. Feel a sense of belonging while nourishing your mind and spirit.</p>
+                </div>
+            </div>
+            <div id="block-wrapper">
+                <img src="Spiritual.jpg" class="blockimg-portrait" alt="Spiritual image">
+                <div id="block3">
+                    <p id="para">Embark on a journey within to discover your true self and inner peace. Our practices help
+                        you quiet the mind and awaken spiritual awareness. Experience the harmony of body, mind, and soul
+                        through guided sessions. Connect deeply with your essence and the world around you.</p>
+                </div>
+            </div>
+        </div>
+    <div id="aboutus">
+        <h2 class="about-heading">About Us</h2>
+        <div class="aboutcontent">
+            <p>Share some information about your yoga practice, your philosophy, and what you offer. You can talk about
+                the different styles of yoga you teach, your experience, and the benefits students can expect. Highlight
+                your unique approach and what makes your classes special.</p>
+        </div>
+        <footer id="footer">
+            <div class="footer-section">
+                <h3>Project</h3>
+                <a href="index team.html">Team</a>
+            </div>
+            <div class="footer-section">
+                <a href="#">
+                <h3 id="git">GitHub</h3>
+                </a>
+                <a href="https://github.com/Harsh8Atre/F.Y.I" target="_blank">GitHub</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <a href="index linkedin.html">LinkedIn</a>
+            </div>
+        </footer>
+    </div>
+
+    <div id="auth-popup" class="auth-popup hidden">
+        <div class="auth-box">
+            <button class="close-btn" id="closeAuthPopup" onclick="togglePopup()">✖</button>
+            <h2 id="auth-title">Login</h2>
+            <form id="auth-form">
+                <input type="email" placeholder="Email" required />
+                <input type="password" placeholder="Password" required />
+                <button type="submit" class="btn">Continue</button>
+                <p id="toggle-text">Don't have an account? <a href="#" onclick="switchMode()">Sign up</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="login.js"></script>
+
+</body>

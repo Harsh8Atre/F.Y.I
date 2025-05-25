@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>F.Y.I - Team</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="teaminfo">
+
+    <div class="container">
+        
+        <header>
+        <nav>
+            <div class="logo"><h3>F.Y.I.</h3></div>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="index pricing.html">Pricing</a></li>
+                <li><a href="#" onclick="togglePopup()">Login</a></li>
+                <li><a href="#" onclick="togglePopup()">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+        <img src="homelogo.png" class="bannerlogo1" alt="Logo">
+        <h1 id="team-heading">Meet the Team</h1>
+
+<div class="team-table-wrapper">
+    <table class="team-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Harsh Atre</td>
+                <td><a href="https://mail.google.com/mail/?view=cm&fs=1&to=harsh.atre20@gmail.com" target="_blank">Mail me</a></td>
+                <td><a href="tel:+918821808460">Call me</a></td>
+            </tr>
+            <tr>
+                <td>Aman Singh</td>
+                <td><a href="https://mail.google.com/mail/?view=cm&fs=1&to=amansin522@gmail.com" target="_blank">Mail me</a></td>
+                <td><a href="tel:+917869785739">Call me</a></td>
+            </tr>
+            <tr>
+                <td>Ankit Singh</td>
+                <td><a href="https://mail.google.com/mail/?view=cm&fs=1&to=aditim2523@gmail.com" target="_blank">Mail me</a></td>
+                <td><a href="tel:+917000435709">Call me</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+        </div>
+
+    <footer id="footer">
+            <div class="footer-section">
+                <h3>Project</h3>
+                <a href="index team.html" class="active">Team</a>
+            </div>
+            <div class="footer-section">
+                <a href="#"><h3>GitHub</h3></a>
+                <a href="https://github.com/Harsh8Atre/F.Y.I" target="_blank">GitHub</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <a href="index linkedin.html">LinkedIn</a>
+            </div>            
+        </footer>  
+        <div id="auth-popup" class="auth-popup hidden">
+    <div class="auth-box">
+      <button class="close-btn" onclick="togglePopup()">✖</button>
+      <h2 id="auth-title">Login</h2>
+      <form id="auth-form">
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <button type="submit" class="btn">Continue</button>
+        <p id="toggle-text">Don't have an account? <a href="#" onclick="switchMode()">Sign up</a></p>
+      </form>
+    </div>
+  </div>
+  <script src="login.js"></script>
+
+</body>
+</html>
